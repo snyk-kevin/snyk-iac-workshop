@@ -218,6 +218,9 @@ Resources:
 
   CodePipelineArtifactBucket:
     Type: AWS::S3::Bucket
+    Properties:
+      PublicAccessBlockConfiguration:
+        IgnorePublicAcls: true
     DeletionPolicy: Delete
 
   CodeBuildServiceRole:
